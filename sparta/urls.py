@@ -1,11 +1,8 @@
 from typing import Dict
 
 from django.contrib import admin
-
 from django.http import HttpRequest
-
 from django.urls import path
-
 from ninja import NinjaAPI
 
 api = NinjaAPI()
@@ -21,11 +18,3 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/", api.urls),
 ]
-
-
-class Check:
-    name = "name"
-
-
-class Find:
-    find = "?"

@@ -187,6 +187,18 @@ dotenv = ["python-dotenv (>=0.10.4)"]
 email = ["email-validator (>=1.0.3)"]
 
 [[package]]
+name = "pymysql"
+version = "1.0.2"
+description = "Pure Python MySQL Driver"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+ed25519 = ["PyNaCl (>=1.4.0)"]
+rsa = ["cryptography"]
+
+[[package]]
 name = "sqlparse"
 version = "0.4.2"
 description = "A non-validating SQL parser."
@@ -209,6 +221,14 @@ description = "A lil' TOML parser"
 category = "main"
 optional = false
 python-versions = ">=3.6"
+
+[[package]]
+name = "types-pymysql"
+version = "1.0.6"
+description = "Typing stubs for PyMySQL"
+category = "main"
+optional = false
+python-versions = "*"
 
 [[package]]
 name = "types-pytz"
@@ -245,7 +265,7 @@ python-versions = ">=2"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "de2abdb2717cbced66b55a9de616984d24c9677bba3925c5cb79c21256af922c"
+content-hash = "138ffd80952437bffc0b71c87d1a50658990c3ee02e7bfb12fab41358b109dd4"
 
 [metadata.files]
 asgiref = []
@@ -262,9 +282,11 @@ mypy-extensions = []
 pathspec = []
 platformdirs = []
 pydantic = []
+pymysql = []
 sqlparse = []
 toml = []
 tomli = []
+types-pymysql = []
 types-pytz = []
 types-pyyaml = []
 typing-extensions = []
