@@ -5,3 +5,5 @@ __pycache__
 .venv
 
 sparta/local_settings.py
+
+.vscode
